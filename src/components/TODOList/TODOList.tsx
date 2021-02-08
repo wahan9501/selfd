@@ -1,11 +1,9 @@
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import * as React from 'react';
-import { TODOItem } from '../TODOItem';
+import { ITODOItemProps, TODOItem } from '../TODOItem';
 
 export interface ITODOListProps {
-  items: { title: string }[];
+  items: ITODOItemProps[];
 }
 
 export function TODOList(props: ITODOListProps) {
