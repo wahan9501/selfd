@@ -1,8 +1,8 @@
-import Checkbox from "@material-ui/core/Checkbox";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import * as React from "react";
+import Checkbox from '@material-ui/core/Checkbox';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import * as React from 'react';
 
 export enum TODOItemStatus {
   Undo,
@@ -24,7 +24,7 @@ export function TODOItem(props: ITODOItemProps) {
         <Checkbox
           checked={checked}
           onChange={(ev) => setChecked(ev.target.checked)}
-          inputProps={{ "aria-label": "primary checkbox" }}
+          inputProps={{ 'aria-label': 'primary checkbox' }}
         />
       </ListItemIcon>
       <ListItemText>{title}</ListItemText>
