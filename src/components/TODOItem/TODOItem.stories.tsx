@@ -1,12 +1,12 @@
 import { Story } from '@storybook/react/types-6-0';
 import React from 'react';
-import { FlexContainerDecorator } from '../../../.storybook/decorators';
+import { WrapperDecorator } from '../../../.storybook/preview';
 import { ITODOItemProps, TODOItem, TODOItemStatus } from './TODOItem';
 
 export default {
   title: 'Components/TODOItem',
   component: TODOItem,
-  decorators: [FlexContainerDecorator],
+  decorators: [WrapperDecorator],
 };
 
 const Template: Story<ITODOItemProps> = (args) => {
